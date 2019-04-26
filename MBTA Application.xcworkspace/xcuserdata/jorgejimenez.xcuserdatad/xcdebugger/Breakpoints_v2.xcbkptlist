@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MBTA Application/AppDelegate.swift"
+            timestampString = "569862812.87569"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MBTA Application/Cells/Home Cells/HomeTableViewCell.swift"
+            timestampString = "569299937.654747"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MBTA_Application.HomeTableViewCell.__allocating_init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; MBTA_Application.HomeTableViewCell"
+                  moduleName = "MBTA Application"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jorgejimenez/Desktop/apps/MBTA%20Application/MBTA%20Application/Cells/Home%20Cells/HomeTableViewCell.swift"
+                  timestampString = "569295925.5735511"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MBTA_Application.HomeTableViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; MBTA_Application.HomeTableViewCell"
+                  moduleName = "MBTA Application"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jorgejimenez/Desktop/apps/MBTA%20Application/MBTA%20Application/Cells/Home%20Cells/HomeTableViewCell.swift"
+                  timestampString = "569295925.590973"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MBTA_Application.HomeTableViewCell.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MBTA_Application.HomeTableViewCell&gt;"
+                  moduleName = "MBTA Application"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jorgejimenez/Desktop/apps/MBTA%20Application/MBTA%20Application/Cells/Home%20Cells/HomeTableViewCell.swift"
+                  timestampString = "569295925.593468"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MBTA_Application.HomeTableViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MBTA_Application.HomeTableViewCell&gt;"
+                  moduleName = "MBTA Application"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jorgejimenez/Desktop/apps/MBTA%20Application/MBTA%20Application/Cells/Home%20Cells/HomeTableViewCell.swift"
+                  timestampString = "569295925.5959311"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "50">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MBTA_Application.HomeTableViewCell.__deallocating_deinit"
+                  moduleName = "MBTA Application"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jorgejimenez/Desktop/apps/MBTA%20Application/MBTA%20Application/Cells/Home%20Cells/HomeTableViewCell.swift"
+                  timestampString = "569295925.599133"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

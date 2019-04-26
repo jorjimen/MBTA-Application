@@ -1,0 +1,55 @@
+PODS:
+  - Alamofire (4.8.0)
+  - AlamofireImage (3.5.0):
+    - Alamofire (~> 4.8)
+  - CDAlertView (0.9.1)
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
+  - MBSegueCollection (0.2.1)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (4.2.0)
+  - TableViewReloadAnimation (0.0.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - CDAlertView
+  - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
+  - MBSegueCollection
+  - SVProgressHUD
+  - SwiftyJSON
+  - TableViewReloadAnimation (~> 0.0.5)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - CDAlertView
+    - MBSegueCollection
+    - SVProgressHUD
+    - SwiftyJSON
+    - TableViewReloadAnimation
+
+EXTERNAL SOURCES:
+  ChameleonFramework:
+    :git: https://github.com/ViccAlexander/Chameleon.git
+
+CHECKOUT OPTIONS:
+  ChameleonFramework:
+    :commit: 6dd284bde21ea2e7f9fd89bc36f40df16e16369d
+    :git: https://github.com/ViccAlexander/Chameleon.git
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
+  CDAlertView: 89450acbd8d882868f2fc4ec6d2b6f128710c779
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  MBSegueCollection: d837c6645ade9607dd4ff1161ec995d5485c157a
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  TableViewReloadAnimation: f3a4c4048efbc56331be98075f26a2e533a14c16
+
+PODFILE CHECKSUM: 920b55746f126d3a6748b1678b8b7fc5d40e5509
+
+COCOAPODS: 1.5.3

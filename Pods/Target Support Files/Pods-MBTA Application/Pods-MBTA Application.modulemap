@@ -1,0 +1,6 @@
+framework module Pods_MBTA_Application {
+  umbrella header "Pods-MBTA Application-umbrella.h"
+
+  export *
+  module * { export * }
+}
