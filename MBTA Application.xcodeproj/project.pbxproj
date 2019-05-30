@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		862DECF321ED80DE00B2B4BD /* LaunchAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862DECF221ED80DE00B2B4BD /* LaunchAnimationViewController.swift */; };
 		862DECF621ED993800B2B4BD /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 862DECF421ED993800B2B4BD /* Model.xcdatamodeld */; };
+		86525847229F515A002901BE /* stopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86525845229F515A002901BE /* stopCell.swift */; };
+		86525848229F515A002901BE /* stopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86525846229F515A002901BE /* stopCell.xib */; };
 		869BDD8321EE8A9800A54F0F /* train_sil_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = 869BDD8221EE8A9800A54F0F /* train_sil_sel.png */; };
 		869C470F21F753B700408EE5 /* StopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869C470E21F753B700408EE5 /* StopViewController.swift */; };
 		86A3AEB721F7055C007AB8AC /* StopsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A3AEB621F7055C007AB8AC /* StopsDataModel.swift */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		862DECF221ED80DE00B2B4BD /* LaunchAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchAnimationViewController.swift; path = "MBTA Application/View Controllers/LaunchAnimationViewController.swift"; sourceTree = SOURCE_ROOT; };
 		862DECF521ED993800B2B4BD /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		86525845229F515A002901BE /* stopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stopCell.swift; sourceTree = "<group>"; };
+		86525846229F515A002901BE /* stopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = stopCell.xib; sourceTree = "<group>"; };
 		869BDD8221EE8A9800A54F0F /* train_sil_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = train_sil_sel.png; sourceTree = "<group>"; };
 		869C470E21F753B700408EE5 /* StopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopViewController.swift; sourceTree = "<group>"; };
 		86A3AEB621F7055C007AB8AC /* StopsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsDataModel.swift; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				86B1698D21EC41E7008960FE /* trainStopsCell.swift */,
+				86525845229F515A002901BE /* stopCell.swift */,
+				86525846229F515A002901BE /* stopCell.xib */,
 				86B1698E21EC41E7008960FE /* trainStopsCell.xib */,
 			);
 			path = "Stops Cells";
@@ -275,6 +281,7 @@
 				86E5216821ED3EA100038D98 /* mockuo2.png in Resources */,
 				86E5215F21ED36D400038D98 /* MBTA_logo_black.png in Resources */,
 				86E5215C21ED336C00038D98 /* introductionCell.xib in Resources */,
+				86525848229F515A002901BE /* stopCell.xib in Resources */,
 				86E5216121ED386D00038D98 /* mocklogo.png in Resources */,
 				86E5216E21ED439200038D98 /* star-half-empty.png in Resources */,
 			);
@@ -346,6 +353,7 @@
 				86A3AEB921F7164C007AB8AC /* MenuBar.swift in Sources */,
 				86A3AEB721F7055C007AB8AC /* StopsDataModel.swift in Sources */,
 				86CDCAB421ED25E400CBF911 /* IntroductionController.swift in Sources */,
+				86525847229F515A002901BE /* stopCell.swift in Sources */,
 				86B1697A21EC35E8008960FE /* ViewController.swift in Sources */,
 				86E5216421ED3DFA00038D98 /* introductionCell2.swift in Sources */,
 				86B1697821EC35E8008960FE /* AppDelegate.swift in Sources */,

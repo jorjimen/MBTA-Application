@@ -20,4 +20,5 @@ class stopData {
     var long = String()
     var name = String()
     var wheel = String()
+    var isFirst = false
 }

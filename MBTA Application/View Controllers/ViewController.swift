@@ -12,6 +12,7 @@ import SwiftyJSON
 import ChameleonFramework
 import CoreData
 import SVProgressHUD
+import TableViewReloadAnimation
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UITabBarDelegate {
     var trainData = [RouteData]()
@@ -217,11 +218,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 let currJSON = JSON(response.result.value!)
                 for i in 0...currJSON["data"].arrayValue.count - 1 {
                     let dataToAdd = stopData()
+                    if i == 0 {
+                        dataToAdd.isFirst = true
+                    }
                     dataToAdd.address = currJSON["data"][i]["attributes"]["address"].stringValue
                     dataToAdd.lat = currJSON["data"][i]["attributes"]["latitude"].stringValue
                     dataToAdd.long =  currJSON["data"][i]["longitude"]["address"].stringValue
                     dataToAdd.wheel = currJSON["data"][i]["longitude"]["wheelchair_boarding"].stringValue
-                    dataToAdd.name = currJSON["data"][i]["longitude"]["name"].stringValue
+                    dataToAdd.name = currJSON["data"][i]["attributes"]["name"].stringValue
                     self.dataToSend.stopDataArray.append(dataToAdd)
                     if i == currJSON["data"].arrayValue.count - 1 {
                         self.performSegue(withIdentifier: "goToStops", sender: self)
