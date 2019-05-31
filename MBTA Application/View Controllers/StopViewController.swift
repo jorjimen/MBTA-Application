@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 import ChameleonFramework
 import TableViewReloadAnimation
 
@@ -89,6 +90,8 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.directionButton.backgroundColor = UIColor(hexString: (stopData.route?.color)!)!
         cell.arrButton.backgroundColor = UIColor(hexString: (stopData.route?.color)!)!
         cell.separator.backgroundColor = UIColor(hexString: (stopData.route?.color)!)!
+        cell.directionButton.tag = indexPath.row
+        cell.directionButton.addTarget(self, action:  #selector(stopDirection), for: UIControl.Event.touchDown)
         if indexPath.row == 0 {
             cell.topBar.isHidden = true
             cell.stopCircle.backgroundColor = .white
@@ -106,4 +109,13 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    @objc func stopDirection(sender: UIButton) {
+        let data = stopData.stopDataArray[sender.tag]
+        let coordinates = CLLocationCoordinate2D(latitude: (Double(data.lat) ?? 0),longitude: (Double(data.long) ?? 0))
+        let setSpan = MKCoordinateRegion(center: coordinates, latitudinalMeters: 1000, longitudinalMeters: 1000)
+        let options = [MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: setSpan.center),MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: setSpan.span)]
+        let item = MKMapItem(placemark:  MKPlacemark(coordinate: coordinates))
+        item.name = data.name
+        item.openInMaps(launchOptions: options)
+    }
 }

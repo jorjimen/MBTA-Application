@@ -16,9 +16,9 @@ class stopCell: UITableViewCell {
     @IBOutlet weak var topBar: UIView!
     @IBOutlet weak var directionButton: UIButton!
     var isFirst = false
-    
     @IBOutlet weak var separator: UIView!
     @IBOutlet weak var arrButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

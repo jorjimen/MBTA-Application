@@ -223,8 +223,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     }
                     dataToAdd.address = currJSON["data"][i]["attributes"]["address"].stringValue
                     dataToAdd.lat = currJSON["data"][i]["attributes"]["latitude"].stringValue
-                    dataToAdd.long =  currJSON["data"][i]["longitude"]["address"].stringValue
-                    dataToAdd.wheel = currJSON["data"][i]["longitude"]["wheelchair_boarding"].stringValue
+                    dataToAdd.long =  currJSON["data"][i]["attributes"]["longitude"].stringValue
+                    dataToAdd.wheel = currJSON["data"][i]["attribues"]["wheelchair_boarding"].stringValue
                     dataToAdd.name = currJSON["data"][i]["attributes"]["name"].stringValue
                     self.dataToSend.stopDataArray.append(dataToAdd)
                     if i == currJSON["data"].arrayValue.count - 1 {

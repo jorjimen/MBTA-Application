@@ -33,13 +33,19 @@ The application also uses <b> CoreData </b> and <b> NSFetchRequest </b> to allow
 
 <img src = "README_images/five.jpg" width = "300">
 
-If a user is interested in a specific stop, he is allowed to click on the stop, producing an additional call to the API which retrieves information on every stop. The stops are displayed for the users to see, and users can filter between a Northbound or Southbound display. Framework for direction and more information on a stop is added, however, these are not currently implemented in the application therefore clicking the button does not work.
+If a user is interested in a specific stop, he is allowed to click on the stop, producing an additional call to the API which retrieves information on every stop. The stops are displayed for the users to see, and users can filter between a Northbound or Southbound display.
 
 <img src = "README_images/six.jpg" width = "300">
 
-For user convenience but simultaneously memory enhancement, this feature <b> currently </b> works in a cache system. Every time a user makes a call to display information on a route, the application saves a copy of the most recent stop displayed. This mean if a user returns or exits the apps, and clicks on the same route, it can display the information in lightning speed without having to do an additional call to the API. However, another route will have to produce another call, and may take some time depending on the Internet of the user, and the current algorithm is a trivial approach which means it has a lot of room for enhancement in the future to come.
+Using <b> CLLocation </b> and <b> MapKit </b>, by clicking on the direction button of any of these stops will display the exact location of the stop inside your Apple Maps. For example, if a user decides to go into <b> Green Line B </b> and display the location of the <b> Boston University Central Stop </b>, this is what they would see:
 
-Other Cocoapods used by the application include <a href = "https://github.com/viccalexander/Chameleon"> ChameleonFramework </a>, <a> ChameleonFramework </a>, <a href = "https://github.com/SVProgressHUD/SVProgressHUD"> SVProgressHUD </a> and <a href = "https://cocoapods.org/pods/TableViewReloadAnimation"> TableViewReloadAnimation </a>.
+<img src = "README_images/seven.jpg" width = "300">
+
+The arrival button does not currently work but the framework is added for implementation.
+
+For user convenience but simultaneously memory enhancement, this feature <b> currently </b> works in a similar way as caching does. Every time a user makes a call to display information on a route, the application saves a copy of the most recent stop displayed. This mean if a user returns or exits the apps, and clicks on the same route, it can display the information in lightning speed without having to do an additional call to the API. However, another route will have to produce another call, and may take some time depending on the Internet of the user, and the current algorithm is a trivial approach which means it has a lot of room for enhancement in the future to come.
+
+Other Cocoapods used by the application include <a href = "https://github.com/viccalexander/Chameleon"> ChameleonFramework </a>, <a href = "https://github.com/SVProgressHUD/SVProgressHUD"> SVProgressHUD </a> and <a href = "https://cocoapods.org/pods/TableViewReloadAnimation"> TableViewReloadAnimation </a>.
 
 # What are some features expected to be implemented in this application.
 
