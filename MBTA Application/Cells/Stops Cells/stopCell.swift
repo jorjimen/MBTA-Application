@@ -19,6 +19,7 @@ class stopCell: UITableViewCell {
     @IBOutlet weak var separator: UIView!
     @IBOutlet weak var arrButton: UIButton!
     
+    @IBOutlet weak var distanceFromUser: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

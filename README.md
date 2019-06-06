@@ -41,9 +41,13 @@ Using <b> CLLocation </b> and <b> MapKit </b>, by clicking on the direction butt
 
 <img src = "README_images/seven.jpg" width = "300">
 
-The arrival button does not currently work but the framework is added for implementation.
+Following protocols and safety from Apple, the application will ask the users to share its location in order to pinpoint stop proximity to the users. Once more, using <b> CLLocation </b>, it will approximate and calculate as accurate as possible the distance from the user to a given stop, using a desired accuracy of <b> kCLLocationAccuracyBestForNavigation </b>. This updates live as the user's location changes. In this simulation, the user is currently located at the Boston University College Of Fine Arts, which is located at lat: 42.351170 and long: -71.114370, and selects the Green Line B, which passes right through Boston University and has one stop almost in front of the building:
 
-For user convenience but simultaneously memory enhancement, this feature <b> currently </b> works in a similar way as caching does. Every time a user makes a call to display information on a route, the application saves a copy of the most recent stop displayed. This mean if a user returns or exits the apps, and clicks on the same route, it can display the information in lightning speed without having to do an additional call to the API. However, another route will have to produce another call, and may take some time depending on the Internet of the user, and the current algorithm is a trivial approach which means it has a lot of room for enhancement in the future to come.
+<img src = "README_images/eight.jpg" width = "300">
+
+The distance is shown in both miles and feet depending on the proximity of the user.
+
+The arrival button does not currently work but the framework is added for implementation. For user convenience but and memory enhancement, this feature <b> currently </b> works in a similar way as caching does by saving a copy of the most recent called stop to not have to call the API once again.
 
 Other Cocoapods used by the application include <a href = "https://github.com/viccalexander/Chameleon"> ChameleonFramework </a>, <a href = "https://github.com/SVProgressHUD/SVProgressHUD"> SVProgressHUD </a> and <a href = "https://cocoapods.org/pods/TableViewReloadAnimation"> TableViewReloadAnimation </a>.
 

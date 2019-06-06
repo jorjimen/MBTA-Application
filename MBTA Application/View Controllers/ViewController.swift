@@ -31,6 +31,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         mainSetup()
+        // jsonTesting()
+    }
+    
+    private func jsonTesting() {
+        Alamofire.request("https://api-v3.mbta.com/vehicles").responseJSON {
+            response in
+            if response.result.isSuccess {
+                let currJSON = JSON(response.result.value!)
+                print(currJSON)
+            }
+            else {
+                print("Request insuccesfull")
+                return
+            }
+        }
     }
     
     // MARK: mainSetup() Function

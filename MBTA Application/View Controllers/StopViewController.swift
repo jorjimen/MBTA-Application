@@ -11,11 +11,12 @@ import MapKit
 import ChameleonFramework
 import TableViewReloadAnimation
 
-class StopViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class StopViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate {
     
     var stopData = StopDataModel()
     var barUnder = UIView()
     var setState = false
+    let locationManager = CLLocationManager()
     @IBOutlet weak var stopTableView: UITableView!
     
     var segmentedControl : UISegmentedControl = {
@@ -29,11 +30,20 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.locationManager.requestAlwaysAuthorization()
+        self.locationManager.requestWhenInUseAuthorization()
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+            locationManager.startUpdatingLocation()
+            stopTableView.reloadData()
+        }
         stopTableView.register(UINib(nibName: "stopCell", bundle: nil), forCellReuseIdentifier: "stopCell")
         stopTableView.delegate = self
         stopTableView.dataSource = self
         stopTableView.separatorStyle = .none
         addTopBar()
+        
     }
     
     private func addTopBar() {
@@ -76,6 +86,9 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
    
     }
     
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        stopTableView.reloadData()
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return stopData.stopDataArray.count
@@ -106,6 +119,20 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
                 cell.topBar.isHidden = false
             }
         }
+        let lat = Double(stopData.stopDataArray[indexPath.row].lat) ?? 0
+        let long = Double(stopData.stopDataArray[indexPath.row].long) ?? 0
+        let coordinate = CLLocation(latitude: lat, longitude: long)
+        let userDistance = locationManager.location ?? CLLocation(latitude: 1.0, longitude: 1.0)
+        if userDistance.coordinate.latitude == 1.0 && userDistance.coordinate.longitude == 1.0 {
+            cell.distanceFromUser.text = ""
+        } else {
+            let distance = (coordinate.distance(from: userDistance) / 1609.344)
+            if distance > 0.0284091 {
+                cell.distanceFromUser.text = String((distance*10).rounded()/10) + " mi"
+            } else {
+                cell.distanceFromUser.text = String((((distance*5280)*10).rounded()/10) - 50) + " feet"
+            }
+        }
         return cell
     }
     
@@ -118,4 +145,5 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
         item.name = data.name
         item.openInMaps(launchOptions: options)
     }
+
 }
