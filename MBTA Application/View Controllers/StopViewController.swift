@@ -17,6 +17,7 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
     var barUnder = UIView()
     var setState = false
     let locationManager = CLLocationManager()
+    var didDisplayAlert = false
     @IBOutlet weak var stopTableView: UITableView!
     
     var segmentedControl : UISegmentedControl = {
@@ -30,6 +31,7 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        didDisplayAlert = false
         self.locationManager.requestAlwaysAuthorization()
         self.locationManager.requestWhenInUseAuthorization()
         if CLLocationManager.locationServicesEnabled() {
@@ -127,10 +129,21 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
             cell.distanceFromUser.text = ""
         } else {
             let distance = (coordinate.distance(from: userDistance) / 1609.344)
-            if distance > 0.0284091 {
-                cell.distanceFromUser.text = String((distance*10).rounded()/10) + " mi"
+            if distance > 200 {
+                let alert = UIAlertController(title: "Too far!", message: "You are outside of a 200 mile radius from any nearby stop. No distance will be shown.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Continue", style: .cancel, handler: { (action) in
+                }))
+                if !didDisplayAlert {
+                    self.present(alert, animated: true)
+                    self.didDisplayAlert = true
+                }
+                cell.distanceFromUser.text = ""
             } else {
-                cell.distanceFromUser.text = String((((distance*5280)*10).rounded()/10) - 50) + " feet"
+                if distance > 0.0284091 {
+                    cell.distanceFromUser.text = String((distance*10).rounded()/10) + " mi"
+                } else {
+                    cell.distanceFromUser.text = String((((distance*5280)*10).rounded()/10) - 50) + " feet"
+                }
             }
         }
         return cell
