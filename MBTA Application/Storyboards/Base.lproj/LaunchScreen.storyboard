@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mocklogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="vFS-hb-vou">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mocklogo copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="vFS-hb-vou">
                                 <rect key="frame" x="113" y="354" width="189" height="189"/>
                             </imageView>
                         </subviews>
@@ -37,6 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="mocklogo.png" width="512" height="512"/>
+        <image name="mocklogo copy.png" width="512" height="512"/>
     </resources>
 </document>

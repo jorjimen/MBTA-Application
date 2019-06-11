@@ -16,8 +16,8 @@ class IntroductionController: UICollectionViewController, UICollectionViewDelega
         let pc = UIPageControl()
         pc.currentPage = 0
         pc.numberOfPages = 3
-        pc.currentPageIndicatorTintColor = UIColor(hexString: "5e65fb")
-        pc.pageIndicatorTintColor = UIColor(hexString: "cfd3fb")
+        pc.currentPageIndicatorTintColor = UIColor(hexString: "f48285")
+        pc.pageIndicatorTintColor = UIColor(hexString: "fee5b8")
         return pc
     }()
     

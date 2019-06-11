@@ -7,6 +7,7 @@ PODS:
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
   - MBSegueCollection (0.2.1)
+  - OpenSans (1.0.3)
   - SVProgressHUD (2.2.5)
   - SwiftyJSON (4.2.0)
   - TableViewReloadAnimation (0.0.5)
@@ -17,6 +18,7 @@ DEPENDENCIES:
   - CDAlertView
   - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
   - MBSegueCollection
+  - OpenSans
   - SVProgressHUD
   - SwiftyJSON
   - TableViewReloadAnimation (~> 0.0.5)
@@ -27,6 +29,7 @@ SPEC REPOS:
     - AlamofireImage
     - CDAlertView
     - MBSegueCollection
+    - OpenSans
     - SVProgressHUD
     - SwiftyJSON
     - TableViewReloadAnimation
@@ -46,10 +49,11 @@ SPEC CHECKSUMS:
   CDAlertView: 89450acbd8d882868f2fc4ec6d2b6f128710c779
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   MBSegueCollection: d837c6645ade9607dd4ff1161ec995d5485c157a
+  OpenSans: 33078846463eae780aa5f82986b51cce085f970d
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   TableViewReloadAnimation: f3a4c4048efbc56331be98075f26a2e533a14c16
 
-PODFILE CHECKSUM: 920b55746f126d3a6748b1678b8b7fc5d40e5509
+PODFILE CHECKSUM: c5870d41e02af09794252a1a8197c0e998bc5e3e
 
 COCOAPODS: 1.5.3

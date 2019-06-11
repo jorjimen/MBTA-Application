@@ -19,9 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         // print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
-        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Baskerville", size: 17.0)!], for: .normal)
-        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Baskerville", size: 17.0)!], for: .selected)
-        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Baskerville", size: 17.0)!], for: .highlighted)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let defaults = UserDefaults.standard
         if (!defaults.bool(forKey: "DidShowTutorial")) {

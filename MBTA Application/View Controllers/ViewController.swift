@@ -100,8 +100,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let label = UILabel()
         label.textColor = UIColor(hexString: "a2a1a7")?.darken(byPercentage: 0.3)
-        label.font = UIFont(name: "Baskerville-SemiBold", size: 12)
-        label.backgroundColor = UIColor(hexString: "f6f6f6")
+        label.font = UIFont(name: " ", size: 12)
+        label.backgroundColor = UIColor(hexString: "e9e9e9")
         if (!isSearching) {
             label.text = "  \(types[section].uppercased())"
         } else {

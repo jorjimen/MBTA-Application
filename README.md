@@ -35,7 +35,7 @@ The application also uses <b> CoreData </b> and <b> NSFetchRequest </b> to allow
 
 If a user is interested in a specific stop, he is allowed to click on the stop, producing an additional call to the API which retrieves information on every stop. The stops are displayed for the users to see, and users can filter between a Northbound or Southbound display.
 
-<img src = "README_images/six.jpg" width = "300">
+<img src = "README_images/sixx.jpg" width = "300">
 
 Using <b> CLLocation </b> and <b> MapKit </b>, by clicking on the direction button of any of these stops will display the exact location of the stop inside your Apple Maps. For example, if a user decides to go into <b> Green Line B </b> and display the location of the <b> Boston University Central Stop </b>, this is what they would see:
 

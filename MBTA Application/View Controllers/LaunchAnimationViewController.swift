@@ -35,7 +35,7 @@ class LaunchAnimationViewController: UIViewController {
         activityIndicator.center = CGPoint(x: 182, y: 608)
         activityIndicator.frame.size = CGSize(width: 50, height: 50)
         activityIndicator.hidesWhenStopped = true
-        activityIndicator.color = UIColor(hexString: "5e65fb")
+        activityIndicator.color = UIColor(hexString: "f48285")
         view.addSubview(activityIndicator)
     }
     

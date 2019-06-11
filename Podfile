@@ -15,7 +15,7 @@ pod 'SVProgressHUD'
 pod 'AlamofireImage'
 pod 'CDAlertView'
 pod ‘MBSegueCollection’
-pod 'CustomSegue'
+pod 'OpenSans'
 
 inhibit_all_warnings!
 

@@ -54,11 +54,11 @@ class StopViewController: UIViewController, UITableViewDelegate, UITableViewData
         navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
         segmentedControl.backgroundColor = UIColor(hexString: "ebebeb")
         segmentedControl.setTitleTextAttributes([
-            NSAttributedString.Key.font : UIFont(name: "Baskerville", size: 18)!,
+            NSAttributedString.Key.font : UIFont(name: "OpenSans-Light", size: 18)!,
             NSAttributedString.Key.foregroundColor: UIColor.black
             ], for: .normal)
         segmentedControl.setTitleTextAttributes([
-            NSAttributedString.Key.font : UIFont(name: "Baskerville", size: 18)!,
+            NSAttributedString.Key.font : UIFont(name: "OpenSans-Light", size: 18)!,
             NSAttributedString.Key.foregroundColor: UIColor(hexString: (stopData.route?.color)!)!
             ], for: .selected)
         segmentedControl.addTarget(self, action: #selector(changeBar), for: .valueChanged)
