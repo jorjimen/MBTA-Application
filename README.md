@@ -2,7 +2,7 @@
 
 <img src = "README_images/mocklogo.png" width = "200">
 
-This is a work in progress. Since this project is still in developmental stage, any images or fonts used <b> currently </b> in this project will not be included in the final project since some are retrieved from Google and they are not of my creation. This is an unpublished project, therefore, there are no economical gains whatsoever from the production of this. The logo for this application is NOT the logo that will be used upon release, this is simply used as a prototype to provide more aesthetic to the production stage.
+This is a work in progress. Since this project is still in developmental stage, any images used <b> currently </b> in this project will not be included in the final project since some are retrieved from Google and they are not of my creation. This is an unpublished project, therefore, there are no economical gains whatsoever from the production of this. The current logo might not be the logo included in the final project.
 
 I have made all of my sources free for the public. Anybody can view this, and anybody can use any source of code contained in this GitHub project free of will. No crediting is needed but it will be much appreciated :)
 
@@ -13,6 +13,8 @@ This MBTA Application, with a draft mock-up name of "MyMBTA" is an iOS applicati
 In the demo stage, no auto-layout is implemented for any iPhone other than the iPhone X. Therefore, any rendering and previewing will be previewed for now using iPhone X as the base size of the canvas. In other words, this will not run to size in an iPhone 7.
 
 # How does it work and what features are currently implemented?
+
+The font-family used in this project is <a href = "https://fonts.google.com/specimen/Open+Sans"> OpenSans</a>.
 
 MyMBTA makes use of the <a href = "https://www.mbta.com/developers/v3-api"> MBTA V3 API </a> and uses <a href = "https://github.com/Alamofire/Alamofire"> Alamofire </a> to call the MBTA V3 API to make calls to the API to retrieve live or constant data provided by the Massachusetts Bay Transportation Authority. The application has a one time (only appears on installment) user friendly introduction to the application, which shows the users what to expect. This one-time feature is not up to date at the moment and does not provide the correct information since the project is up to development, but the complete framework is already implemented to the project.
 
