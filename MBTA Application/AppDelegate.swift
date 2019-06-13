@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let rootViewController = storyboard.instantiateInitialViewController()
             window?.rootViewController = rootViewController
         } else {
-            let rootViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController")
+            let rootViewController = storyboard.instantiateViewController(withIdentifier: "TabViewController")
             window?.rootViewController = rootViewController
         }
         return true

@@ -16,6 +16,7 @@ pod 'AlamofireImage'
 pod 'CDAlertView'
 pod ‘MBSegueCollection’
 pod 'OpenSans'
+pod 'SDWebImage'
 
 inhibit_all_warnings!
 
